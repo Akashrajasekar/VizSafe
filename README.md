@@ -15,7 +15,7 @@ Follow these instructions to get the application running on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Akashrajasekar/VizSafe.git
+git clone -b dev https://github.com/Akashrajasekar/VizSafe.git
 cd VizSafe
 ```
 
