@@ -32,7 +32,8 @@ class TextToSpeechService:
     async def text_to_speech(self, 
                             text: str, 
                             voice: str = "Fritz-PlayAI", 
-                            transcribe: bool = True) -> TranscribeResult:
+                            transcribe: bool = True,
+                            filename: Optional[str] = None) -> TranscribeResult:
         """
         Convert text to speech, optionally transcribe it back.
         
@@ -40,6 +41,7 @@ class TextToSpeechService:
             text: The text to convert to speech
             voice: The voice to use for synthesis
             transcribe: Whether to transcribe the generated audio
+            filename: Optional custom filename base (without extension)
             
         Returns:
             TranscribeResult object containing original text, audio ID and optional transcription
@@ -54,7 +56,14 @@ class TextToSpeechService:
         
         # Create a file in the current directory structure
         file_id = str(uuid.uuid4())
-        file_path = os.path.join(self.audio_dir, f"{file_id}_speech.wav")
+        
+        # Use custom filename if provided, otherwise use the UUID
+        if filename:
+            file_basename = f"{filename}_{file_id[-8:]}"
+        else:
+            file_basename = f"{file_id}_speech"
+        
+        file_path = os.path.join(self.audio_dir, f"{file_basename}.wav")
         
         # Get the audio response from GROQ and write directly to file
         response = self.client.audio.speech.create(

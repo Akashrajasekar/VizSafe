@@ -50,6 +50,24 @@ except Exception as e:
     logger.error(f"Failed to register Chatbot routes: {str(e)}")
     print(f"ERROR registering Chatbot routes: {str(e)}")
 
+# Import and register Course Generation routes
+try:
+    from app.routes.course import register_course_routes
+    register_course_routes(app)
+    logger.info("Successfully registered Course Generation routes")
+except Exception as e:
+    logger.error(f"Failed to register Course Generation routes: {str(e)}")
+    print(f"ERROR registering Course Generation routes: {str(e)}")
+
+# Import and register Course-to-Speech routes
+try:
+    from app.routes.course_tts import register_course_tts_routes
+    register_course_tts_routes(app)
+    logger.info("Successfully registered Course-to-Speech routes")
+except Exception as e:
+    logger.error(f"Failed to register Course-to-Speech routes: {str(e)}")
+    print(f"ERROR registering Course-to-Speech routes: {str(e)}")
+
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
