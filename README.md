@@ -1,6 +1,88 @@
-# Demo Setup Full-Stack Application
+![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-A full-stack application with a React frontend and FastAPI backend for managing tasks.
+# AI_ble 🔊📖
+
+> Knowledge has never been more access_Ai_ble!
+
+---
+
+## 📌 Problem Statement
+ 
+**Problem Statement 1 – Weave AI magic with Groq**
+
+---
+
+## 🎯 Objective
+
+Our aim is to provide a one-stop-app for every accessibility user to harness the power of Multi-Modal AI to assist them in building their learning journey. No matter the disability, our solution curates a personalized and assitive course path for your educational needs. Just "say" the word, choose the number of topics and the difficulty level, and voila! Your very own learning plan will be displayed on our App, and spoken back to you!
+
+---
+
+## 🧠 Team & Approach
+
+### Team Name:  
+`The Resistance`
+
+### Team Members:  
+🐦‍⬛[Akash Rajasekar](https://www.linkedin.com/in/akash-rajasekar/) <br>
+🧚[Ilfa Shaheed Valiyallappil](https://www.linkedin.com/in/ilfa-shaheed-722250242/) <br>
+🪄[Laya Shree Elango](https://www.linkedin.com/in/laya-shree-elango/) <br>
+🎮[Karthik Vishal S. Ramkumar]([https://github.com/Karthik-Vishal03](https://www.linkedin.com/in/karthik-vishal-sr/)) <br>
+
+### Our Approach:  
+- **Why this problem**: To design the ideal learning platform for accessibility users, and make the experience absolutely simple and learning focussed. 
+- **Key challenges addressed**: _Voice-assisted learning_, _Simplified UI_, _Personalized Course-plan_ for every user.     
+- **Pivots, brainstorms, breakthroughs**: We were able to efficiently manage our tokens by training our multi-modal AI system to recipropcate crisp and consise educational solutions!
+  
+---
+
+## 🛠️ Tech Stack
+
+### Core Technologies Used:
+- Frontend: Streamlit
+- Backend: Python
+- APIs: Groq
+- Hosting: Streamlit
+
+### Sponsor Technologies Used (if any):
+- [X] ✅ **Groq:** _Text, Speech-to-Text, Text-to-Speech models_  
+- [ ] **Monad:** _Your blockchain implementation_  
+- [ ] **Fluvio:** _Real-time data handling_  
+- [ ] **Base:** _AgentKit / OnchainKit / Smart Wallet usage_  
+- [ ] **Screenpipe:** _Screen-based analytics or workflows_  
+- [ ] **Stellar:** _Payments, identity, or token usage_
+
+---
+
+## ✨ Key Features
+
+Most important features of our project:
+
+- ✅ Voice prompts to our AI assistant `Ai_ble`
+- ✅ Customized options to choose the extent of the course plan (number of topics) and the difficulty level.
+- ✅ Complete course charted in _text_by the AI, with proper formatting of details under every topic.
+- ✅ Voice assisted reading of course content
+
+> Images of app come here ‼️
+
+---
+
+## 📽️ Demo & Deliverables ‼️
+
+- **Demo Video Link:** ‼️
+- **Pitch Deck / PPT Link:** ‼️
+
+---
+
+## ✅ Tasks & Bonus Checklist
+
+- [X] ✅**All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)  
+- [X] ✅**All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)**  (Details in Participant Manual)
+- [X] ✅**All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)**  (Details in Participant Manual)
+
+---
+
+## 🧑‍💻 How to Run the Project ‼️‼️‼️(change)
 
 ## Prerequisites
 
@@ -13,9 +95,10 @@ A full-stack application with a React frontend and FastAPI backend for managing 
 Follow these instructions to get the application running on your local machine.
 
 ### 1. Clone the Repository
+‼️[Make the dev as default]
 
 ```bash
-git clone -b dev https://github.com/Akashrajasekar/VizSafe.git
+‼️git clone -b dev https://github.com/Akashrajasekar/VizSafe.git
 cd VizSafe
 ```
 
@@ -165,4 +248,23 @@ The application follows a layered architecture:
 
 - **Models:** Define data structures with Pydantic models
 - **Services:** Implement business logic
-- **Routes:** Handle HTTP requests and responses with automatic validation
+- **Routes:** Handle HTTP requests and responses with automatic validation ‼️‼️‼️
+
+## 🧬 Future Scope
+
+- 📈 
+- 🛡️ 
+---
+
+## 📎 Resources / Credits
+
+- Groq API keys 
+- Groq documentation: https://console.groq.com/docs/overview
+- Groq help videos: https://youtu.be/Ig7esRBhFPY
+
+---
+
+## 🏁 Final Words
+
+Shout out to 🦖[Aaryan Sinha](https://github.com/AaryanTheLaughingGas)
+---
