@@ -27,7 +27,7 @@ Our aim is to provide a one-stop-app for every accessibility user to harness the
 🐦‍⬛[Akash Rajasekar](https://www.linkedin.com/in/akash-rajasekar/) <br>
 🧚[Ilfa Shaheed Valiyallappil](https://www.linkedin.com/in/ilfa-shaheed-722250242/) <br>
 🪄[Laya Shree Elango](https://www.linkedin.com/in/laya-shree-elango/) <br>
-🎮[Karthik Vishal S. Ramkumar]([https://github.com/Karthik-Vishal03](https://www.linkedin.com/in/karthik-vishal-sr/)) <br>
+🎮[Karthik Vishal S. Ramkumar](https://www.linkedin.com/in/karthik-vishal-sr/) <br>
 
 ### Our Approach:  
 - **Why this problem**: To design the ideal learning platform for accessibility users, and make the experience absolutely simple and learning focussed. 
