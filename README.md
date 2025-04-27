@@ -1,6 +1,6 @@
 ![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-# AI_ble 🔊📖
+# 🤖 Ai.ble 🔊📖
 
 > Knowledge has never been more access_Ai_ble!
 
@@ -66,7 +66,10 @@ Most important features of our project:
 - ✅ Complete course charted in _text_by the AI, with proper formatting of details under every topic.
 - ✅ Voice assisted reading of course content
 
-> Images of app come here ‼️
+![Image 1](https://github.com/Akashrajasekar/VizSafe/blob/master/Assets/Ai_ble_HomePage.jpg) <br>
+![Image 2](https://github.com/Akashrajasekar/VizSafe/blob/master/Assets/Ai_ble_CourseGen.jpg) <br>
+![Image 3](https://github.com/Akashrajasekar/VizSafe/blob/master/Assets/Ai_ble_Success.jpg) <br>
+![Image 4](https://github.com/Akashrajasekar/VizSafe/blob/master/Assets/Ai_ble_Library.jpg)
 
 ---
 
