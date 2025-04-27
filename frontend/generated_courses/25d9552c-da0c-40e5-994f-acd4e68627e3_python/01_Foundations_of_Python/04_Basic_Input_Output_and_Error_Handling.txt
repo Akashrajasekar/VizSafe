@@ -1,0 +1,37 @@
+# Basic Input/Output and Error Handling
+
+## Key Concepts
+
+- Input
+- Output
+- Error Handling
+
+## Explanations
+
+Input and output are used to interact with the user and to display results. In Python, you can use the input() function to get input from the user, and you can use the print() function to display output. Error handling is used to handle errors that may occur during the execution of a program, and it allows you to provide a meaningful error message to the user instead of crashing the program.
+
+## Examples
+
+- Using the input() function to get input from the user: name = input('What is your name?')
+- Using the print() function to display output: print('Hello, world!')
+- Using a try-except block to handle an error: try: x = int(input('Enter a number: ')); except ValueError: print('Invalid input')
+
+## Summary Points
+
+- Input and output are used to interact with the user and to display results
+- The input() function is used to get input from the user
+- The print() function is used to display output
+- Error handling is used to handle errors that may occur during the execution of a program
+- Try-except blocks can be used to handle errors
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the input() function in Python?
+A: The input() function is used to get input from the user, and it returns a string.
+
+Q: How do you handle an error in Python using a try-except block?
+A: You use a try block to contain the code that may raise an error, and an except block to contain the code that will be executed if an error occurs.
+
+Q: What is the purpose of the finally block in a try-except statement?
+A: The finally block is used to specify code that will be executed regardless of whether an error occurs.
+

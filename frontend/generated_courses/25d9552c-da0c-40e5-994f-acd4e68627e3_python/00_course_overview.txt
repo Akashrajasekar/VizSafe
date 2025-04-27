@@ -1,0 +1,16 @@
+# Introduction to Python Programming
+
+A comprehensive course designed for individuals who are deaf, blind, or non-verbal, covering the fundamentals of Python programming through clear and descriptive text-based content
+
+## Learning Objectives
+
+1. Understand the basics of Python syntax and data types
+2. Learn how to write and execute Python scripts
+3. Familiarize themselves with popular Python libraries and frameworks
+4. Develop problem-solving skills using Python
+5. Apply Python programming concepts to real-world scenarios
+
+## Course Sections
+
+1. Foundations of Python - This section introduces students to the basics of Python programming, including syntax, data types, and control structures
+2. Advanced Python Concepts and Applications - This section builds on the foundations of Python and explores more advanced topics, including object-oriented programming, file input/output, and data analysis

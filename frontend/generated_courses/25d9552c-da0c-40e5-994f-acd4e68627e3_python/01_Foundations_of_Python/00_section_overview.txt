@@ -1,0 +1,4 @@
+# Section 1: Foundations of Python
+
+This section introduces students to the basics of Python programming, including syntax, data types, and control structures
+

@@ -1,0 +1,35 @@
+# Understanding Time Value of Money
+
+## Key Concepts
+
+- Present value
+- Future value
+- Time value of money
+
+## Explanations
+
+There are several formulas that can be used to calculate present and future values, including the present value formula and the future value formula. The present value formula is PV = FV / (1 + r)^n, where PV is the present value, FV is the future value, r is the interest rate, and n is the number of periods. The future value formula is FV = PV x (1 + r)^n. These formulas can be used to calculate the present and future values of different amounts, and to compare the value of different investment options.
+
+## Examples
+
+- Calculating the present value of a future amount
+- Determining the future value of an investment
+- Comparing the value of different investment options using present and future values
+
+## Summary Points
+
+- The time value of money refers to the idea that a dollar today is worth more than a dollar in the future
+- The present value of a future amount is the amount that, if invested today, would grow to the future amount
+- The future value of an amount is the amount that it will be worth at a future date, based on a given interest rate
+
+## Self-Assessment Questions
+
+Q: What is the time value of money?
+A: The idea that a dollar today is worth more than a dollar in the future
+
+Q: What is the present value of a future amount?
+A: The amount that, if invested today, would grow to the future amount
+
+Q: What is the future value of an amount?
+A: The amount that it will be worth at a future date, based on a given interest rate
+

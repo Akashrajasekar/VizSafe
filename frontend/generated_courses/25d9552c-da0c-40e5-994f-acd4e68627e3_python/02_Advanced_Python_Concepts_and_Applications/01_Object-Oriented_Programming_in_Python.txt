@@ -1,0 +1,37 @@
+# Object-Oriented Programming in Python
+
+## Key Concepts
+
+- classes
+- objects
+- inheritance
+
+## Explanations
+
+Object-oriented programming is a way of designing and organizing code using objects and classes. A class is like a blueprint or a template that defines the characteristics and behaviors of an object. An object is an instance of a class, and it has its own set of attributes and methods. Inheritance is a mechanism that allows one class to inherit the properties and behavior of another class. This helps to promote code reuse and modularity. In Python, classes are defined using the class keyword, and objects are created using the class name followed by parentheses. For example, if we have a class called Car, we can create an object called my_car by using the expression my_car = Car().
+
+## Examples
+
+- Defining a class: class Car: pass
+- Creating an object: my_car = Car()
+- Accessing attributes and methods: my_car.color = 'red'; my_car.start_engine()
+
+## Summary Points
+
+- Classes define the characteristics and behaviors of objects
+- Objects are instances of classes
+- Inheritance allows one class to inherit the properties and behavior of another class
+- Attributes and methods are defined inside the class definition
+- The dot notation is used to access attributes and methods of an object
+
+## Self-Assessment Questions
+
+Q: What is the purpose of a class in object-oriented programming?
+A: A class is a blueprint or template that defines the characteristics and behaviors of an object.
+
+Q: How do we create an object in Python?
+A: We create an object by using the class name followed by parentheses.
+
+Q: What is inheritance in object-oriented programming?
+A: Inheritance is a mechanism that allows one class to inherit the properties and behavior of another class.
+

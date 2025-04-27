@@ -1,0 +1,35 @@
+# Dinosaur Classification
+
+## Key Concepts
+
+- Sauropods
+- Theropods
+- Ornithischians
+
+## Explanations
+
+Dinosaurs can be classified into several groups based on their characteristics and evolutionary relationships. The three main groups of dinosaurs are sauropods, theropods, and ornithischians. Sauropods are characterized by their long necks and tails, and include dinosaurs such as the Brachiosaurus and Diplodocus. Theropods are characterized by their bipedalism and include dinosaurs such as the Tyrannosaurus Rex and Velociraptor.
+
+## Examples
+
+- The Brachiosaurus, a sauropod dinosaur, had a long neck and tail.
+- The Tyrannosaurus Rex, a theropod dinosaur, had sharp teeth and powerful legs.
+- The Stegosaurus, an ornithischian dinosaur, had a row of plates on its back.
+
+## Summary Points
+
+- Dinosaurs can be classified into three main groups: sauropods, theropods, and ornithischians.
+- Sauropods are characterized by their long necks and tails.
+- Theropods are characterized by their bipedalism and sharp teeth.
+
+## Self-Assessment Questions
+
+Q: What are the three main groups of dinosaurs?
+A: Sauropods, theropods, and ornithischians.
+
+Q: What is an example of a sauropod dinosaur?
+A: The Brachiosaurus.
+
+Q: What is a characteristic of theropod dinosaurs?
+A: Bipedalism and sharp teeth.
+

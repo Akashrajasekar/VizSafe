@@ -1,0 +1,14 @@
+# Exploring Dinosaurs
+
+A comprehensive course on dinosaurs designed for individuals who are deaf, blind, or non-verbal, covering the basics of dinosaur biology, evolution, and diversity
+
+## Learning Objectives
+
+1. Understand the definition and characteristics of dinosaurs
+2. Learn about the different types of dinosaurs and their classifications
+3. Explore the evolution and extinction of dinosaurs
+4. Discover the diversity of dinosaur habitats and ecosystems
+
+## Course Sections
+
+1. Introduction to Dinosaurs - This section provides an overview of dinosaur biology, including their definition, characteristics, and importance in the history of life on Earth

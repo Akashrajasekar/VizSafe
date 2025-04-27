@@ -1,0 +1,35 @@
+# Basic Financial Calculations
+
+## Key Concepts
+
+- Interest rates
+- Returns on investment
+- Calculating interest
+
+## Explanations
+
+In addition to calculating interest, it's also important to understand how to calculate returns on investment. The return on investment can be calculated using the formula ROI = (G - C) / C, where ROI is the return on investment, G is the gain, and C is the cost. This formula can be used to compare the return on different investments and to determine which investment is the most profitable.
+
+## Examples
+
+- Calculating the interest on a loan
+- Determining the return on investment for a stock
+- Comparing the return on different investments
+
+## Summary Points
+
+- Interest rates determine the cost of borrowing and the return on investment
+- Returns on investment represent the amount of money that an investment earns over a given period
+- Calculating interest and returns on investment are important financial calculations
+
+## Self-Assessment Questions
+
+Q: What is an interest rate?
+A: A percentage that represents the amount of interest that will be paid on a loan or investment over a given period
+
+Q: What is the return on investment?
+A: The amount of money that an investment earns over a given period
+
+Q: What is the formula for calculating simple interest?
+A: I = P x r x t
+

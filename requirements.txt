@@ -1,0 +1,8 @@
+streamlit
+groq
+python-dotenv
+pydantic
+pandas
+requests
+asyncio
+pathlib

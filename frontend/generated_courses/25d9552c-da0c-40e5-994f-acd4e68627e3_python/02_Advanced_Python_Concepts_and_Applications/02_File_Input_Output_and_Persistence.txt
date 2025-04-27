@@ -1,0 +1,37 @@
+# File Input/Output and Persistence
+
+## Key Concepts
+
+- text files
+- CSV files
+- JSON files
+
+## Explanations
+
+File input/output is the process of reading and writing files in Python. This is useful for storing and retrieving data. Python provides several built-in functions for working with files, including open(), read(), write(), and close(). The open() function is used to open a file, and it returns a file object. The read() method is used to read the contents of a file, and the write() method is used to write data to a file. The close() method is used to close a file after we are done with it.
+
+## Examples
+
+- Opening a text file: file = open('example.txt', 'r')
+- Reading a CSV file: import csv; with open('example.csv', 'r') as file: reader = csv.reader(file)
+- Writing a JSON file: import json; with open('example.json', 'w') as file: json.dump(data, file)
+
+## Summary Points
+
+- File input/output is the process of reading and writing files
+- The open() function is used to open a file
+- The read() method is used to read the contents of a file
+- The write() method is used to write data to a file
+- The close() method is used to close a file
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the open() function in Python?
+A: The open() function is used to open a file and return a file object.
+
+Q: How do we read a CSV file in Python?
+A: We can read a CSV file using the csv module in Python.
+
+Q: What is the purpose of the json module in Python?
+A: The json module is used to read and write JSON files.
+

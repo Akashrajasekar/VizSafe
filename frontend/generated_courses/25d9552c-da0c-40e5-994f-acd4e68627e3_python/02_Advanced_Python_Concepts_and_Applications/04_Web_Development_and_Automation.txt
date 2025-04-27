@@ -1,0 +1,38 @@
+# Web Development and Automation
+
+## Key Concepts
+
+- Flask
+- Django
+- Requests
+- BeautifulSoup
+
+## Explanations
+
+Web development is the process of building web applications using programming languages like Python. In Python, we can use frameworks like Flask and Django to build web applications. Flask is a microframework that provides a lightweight way to build web applications, while Django is a high-level framework that provides an architecture, templates, and APIs for building complex web applications.
+
+## Examples
+
+- Creating a Flask app: from flask import Flask; app = Flask(__name__)
+- Sending an HTTP request: import requests; response = requests.get('https://www.example.com')
+- Parsing HTML using BeautifulSoup: from bs4 import BeautifulSoup; soup = BeautifulSoup(html, 'html.parser')
+
+## Summary Points
+
+- Flask is a microframework for building web applications
+- Django is a high-level framework for building complex web applications
+- Requests is a library for sending HTTP requests
+- BeautifulSoup is a library for parsing HTML and XML documents
+- We can use Python to automate tasks such as web scraping and data extraction
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the Flask framework in Python?
+A: Flask is a microframework for building web applications.
+
+Q: What is the purpose of the Requests library in Python?
+A: Requests is a library for sending HTTP requests.
+
+Q: What is the purpose of the BeautifulSoup library in Python?
+A: BeautifulSoup is a library for parsing HTML and XML documents.
+
