@@ -24,10 +24,13 @@ Our aim is to provide a one-stop-app for every accessibility user to harness the
 `The Resistance`
 
 ### Team Members:  
-🐦‍⬛[Akash Rajasekar](https://www.linkedin.com/in/akash-rajasekar/) <br>
-🧚[Ilfa Shaheed Valiyallappil](https://www.linkedin.com/in/ilfa-shaheed-722250242/) <br>
-🪄[Laya Shree Elango](https://www.linkedin.com/in/laya-shree-elango/) <br>
-🎮[Karthik Vishal S. Ramkumar](https://www.linkedin.com/in/karthik-vishal-sr/) <br>
+| Name                          | LinkedIn                                                                 | GitHub                                           |
+|-------------------------------|--------------------------------------------------------------------------|--------------------------------------------------|
+| 🐦‍⬛ Akash Rajasekar          | [LinkedIn](https://www.linkedin.com/in/akash-rajasekar/)               | [GitHub](https://github.com/Akashrajasekar)      |
+| 🧚 Ilfa Shaheed Valiyallappil | [LinkedIn](https://www.linkedin.com/in/ilfa-shaheed-722250242/)         | [GitHub](https://github.com/ilfa2003)            |
+| 🪄 Laya Shree Elango          | [LinkedIn](https://www.linkedin.com/in/laya-shree-elango/)              | [GitHub](https://github.com/Laya-Shree)          |
+| 🎮 Karthik Vishal S. Ramkumar | [LinkedIn](https://www.linkedin.com/in/karthik-vishal-sr/)              | [GitHub](https://github.com/Karthik-Vishal03)    |
+
 
 ### Our Approach:  
 - **Why this problem**: To design the ideal learning platform for accessibility users, and make the experience absolutely simple and learning focussed. 
@@ -252,13 +255,13 @@ The application follows a layered architecture:
 
 ## 🧬 Future Scope
 
-- 📈 
-- 🛡️ 
+- 📈 ‼️‼️‼️
+- 🛡️ ‼️‼️‼️
 ---
 
 ## 📎 Resources / Credits
 
-- Groq API keys 
+- Groq API keys: https://console.groq.com/keys
 - Groq documentation: https://console.groq.com/docs/overview
 - Groq help videos: https://youtu.be/Ig7esRBhFPY
 
