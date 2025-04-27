@@ -73,9 +73,9 @@ Most important features of our project:
 
 ---
 
-## 📽️ Demo & Deliverables ‼️
+## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** ‼️
+- **Demo Video Link:** [Loom Link](https://www.loom.com/share/94f51049526c4b06b134970592a005e2?sid=84befc95-3960-4a40-881b-6bbda2437ca0)
 - **Pitch Deck / PPT Link:** ‼️
 
 ---
