@@ -1,0 +1,37 @@
+# 1.2: Setting Up a Python Environment
+
+## Key Concepts
+
+- Installing Python
+- Code editor or IDE
+- Command line interface
+
+## Explanations
+
+To start programming in Python, you need to set up a Python environment on your computer. This involves installing Python, choosing a code editor or IDE, and understanding the command line interface. Installing Python can be done by downloading the latest version from the official Python website and following the installation instructions. A code editor or IDE is a program that allows you to write, run, and debug your Python code. Some popular choices include PyCharm, Visual Studio Code, and Sublime Text. The command line interface is a way to interact with your computer using text commands, and it is an essential tool for Python programmers.
+
+## Examples
+
+- You can install Python on your computer by downloading the installation package from the official Python website and following the instructions.
+- A code editor or IDE can help you write and run your Python code, with features such as syntax highlighting, code completion, and debugging tools.
+- The command line interface can be used to run Python programs, with commands such as 'python filename.py' to run a Python script.
+
+## Summary Points
+
+- Installing Python is the first step in setting up a Python environment
+- A code editor or IDE is necessary for writing, running, and debugging Python code
+- The command line interface is an essential tool for Python programmers
+- Popular code editors and IDEs include PyCharm, Visual Studio Code, and Sublime Text
+- The command line interface can be used to run Python programs and interact with the computer
+
+## Self-Assessment Questions
+
+Q: What is the first step in setting up a Python environment?
+A: Installing Python
+
+Q: What is the purpose of a code editor or IDE?
+A: To write, run, and debug Python code
+
+Q: What is the command line interface used for?
+A: To interact with the computer using text commands and run Python programs
+

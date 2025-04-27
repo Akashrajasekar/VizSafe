@@ -1,0 +1,37 @@
+# 1.1: What is Python and Its History
+
+## Key Concepts
+
+- Python language
+- Creator Guido van Rossum
+- Evolution of Python
+
+## Explanations
+
+Python is a high-level, interpreted programming language that was created in the late 1980s by Guido van Rossum. The language was first released in 1991 and was named after the British comedy group Monty Python's Flying Circus. Python's evolution over time has been shaped by its community, with new features and updates being added regularly. The language is known for its simplicity, readability, and ease of use, making it a popular choice for beginners and experienced programmers alike. Python's history is also marked by the development of various versions, including Python 2 and Python 3, with the latter being the current standard. The language has been widely adopted in various fields, including web development, scientific computing, and data analysis.
+
+## Examples
+
+- You can use Python to write a simple 'Hello World' program by typing the command 'print('Hello World')' in a Python interpreter.
+- The Python language has been used in various applications, such as web development, where it is used to build websites and web applications.
+- Python's simplicity and readability make it a great language for beginners to learn, with many online resources and tutorials available.
+
+## Summary Points
+
+- Python is a high-level, interpreted programming language
+- Python was created by Guido van Rossum and first released in 1991
+- Python's evolution has been shaped by its community and has various versions, including Python 2 and Python 3
+- Python is known for its simplicity, readability, and ease of use
+- Python has been widely adopted in various fields, including web development, scientific computing, and data analysis
+
+## Self-Assessment Questions
+
+Q: Who created the Python programming language?
+A: Guido van Rossum
+
+Q: In what year was Python first released?
+A: 1991
+
+Q: What are some of the key features of the Python language?
+A: Simplicity, readability, and ease of use
+

@@ -1,0 +1,37 @@
+# 3.4: Creating and Using Custom Modules
+
+## Key Concepts
+
+- Custom modules
+- Module creation
+- Module usage
+
+## Explanations
+
+When creating a custom module, it's a good idea to follow best practices such as using descriptive names for your functions and variables, and including docstrings to provide documentation. You should also make sure to test your custom module thoroughly to ensure it works as expected.
+
+## Examples
+
+- Create a file called 'mymath.py' with the following code: def add(a, b): return a + b
+- Import the custom module into another program: import mymath; print(mymath.add(2, 3))  # Output: 5
+- Create a custom module with multiple functions: def subtract(a, b): return a - b; def multiply(a, b): return a * b
+
+## Summary Points
+
+- Custom modules can be created by defining a new file with a '.py' extension
+- Custom modules can be imported into other programs using the 'import' statement
+- Custom modules are useful for organizing and reusing your own code
+- Custom modules can be shared with others to collaborate on projects
+- Best practices should be followed when creating custom modules, such as using descriptive names and including docstrings
+
+## Self-Assessment Questions
+
+Q: How do you create a custom module in Python?
+A: You create a custom module by defining a new file with a '.py' extension and adding your functions and variables to it.
+
+Q: What is the benefit of using custom modules in Python?
+A: Custom modules are useful for organizing and reusing your own code, and can be shared with others to collaborate on projects.
+
+Q: What best practices should be followed when creating custom modules in Python?
+A: Best practices include using descriptive names for your functions and variables, and including docstrings to provide documentation.
+

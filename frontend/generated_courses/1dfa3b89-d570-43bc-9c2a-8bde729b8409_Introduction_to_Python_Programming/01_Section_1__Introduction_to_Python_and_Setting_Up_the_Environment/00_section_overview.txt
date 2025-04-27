@@ -1,0 +1,4 @@
+# Section 1: Section 1: Introduction to Python and Setting Up the Environment
+
+This section introduces the basics of Python programming, its history, and its applications, as well as guides learners in setting up their Python environment.
+

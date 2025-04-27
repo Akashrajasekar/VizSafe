@@ -1,0 +1,37 @@
+# 2.2: For Loops
+
+## Key Concepts
+
+- for loops
+- iteration
+- sequences
+
+## Explanations
+
+For loops are used to iterate over sequences such as lists, strings, and tuples. The for loop allows you to execute a block of code for each item in the sequence. In Python, the for loop is written using the 'for' keyword followed by the variable name and the 'in' keyword, and then the sequence. The code to be executed is indented under the for loop.
+
+## Examples
+
+- fruits = ['apple', 'banana', 'cherry']; for fruit in fruits: print(fruit)
+- numbers = [1, 2, 3, 4, 5]; for number in numbers: print(number * 2)
+- name = 'John'; for character in name: print(character)
+
+## Summary Points
+
+- For loops are used to iterate over sequences such as lists, strings, and tuples
+- The for loop allows you to execute a block of code for each item in the sequence
+- For loops can be used with nested sequences, such as lists of lists
+- For loops are an essential part of programming and are used in many different contexts
+- For loops allow for efficient and effective processing and manipulation of large amounts of data
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the for loop in Python?
+A: The for loop is used to iterate over sequences such as lists, strings, and tuples.
+
+Q: Can for loops be used with nested sequences?
+A: Yes, for loops can be used with nested sequences, such as lists of lists.
+
+Q: What happens when a for loop reaches the end of the sequence?
+A: The for loop will automatically stop when it reaches the end of the sequence.
+

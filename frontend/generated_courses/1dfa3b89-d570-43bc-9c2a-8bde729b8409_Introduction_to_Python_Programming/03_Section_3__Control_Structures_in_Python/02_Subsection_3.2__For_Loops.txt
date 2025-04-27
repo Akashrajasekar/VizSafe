@@ -1,0 +1,37 @@
+# Subsection 3.2: For Loops
+
+## Key Concepts
+
+- for loops
+- iterating over sequences
+- loop variables
+
+## Explanations
+
+For loops are used in Python to iterate over sequences such as lists, tuples, and strings. The loop variable is used to store the current value of the sequence, and the loop continues until all values have been processed. For loops are useful for performing repetitive tasks, such as printing the elements of a list or calculating the sum of a list of numbers. For example, a program can use a for loop to print the elements of a list of names, or to calculate the sum of a list of numbers. The loop variable can be used to access the current value of the sequence, and the loop can be controlled using the break and continue statements.
+
+## Examples
+
+- fruits = ['apple', 'banana', 'cherry']; for fruit in fruits: print(fruit)
+- numbers = [1, 2, 3, 4, 5]; sum = 0; for number in numbers: sum += number; print(sum)
+- name = 'hello'; for letter in name: print(letter)
+
+## Summary Points
+
+- for loops are used to iterate over sequences such as lists, tuples, and strings
+- the loop variable is used to store the current value of the sequence
+- for loops are useful for performing repetitive tasks
+- the break and continue statements can be used to control the loop
+- for loops can be used to access the elements of a sequence
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the for loop in Python?
+A: The for loop is used to iterate over sequences such as lists, tuples, and strings.
+
+Q: What is the loop variable used for in a for loop?
+A: The loop variable is used to store the current value of the sequence.
+
+Q: What are some common use cases for for loops?
+A: For loops are useful for performing repetitive tasks, such as printing the elements of a list or calculating the sum of a list of numbers.
+

@@ -1,0 +1,38 @@
+# 2.3 Type Conversion and Formatting
+
+## Key Concepts
+
+- Type Conversion
+- String Formatting
+- Integer Conversion
+- Float Conversion
+
+## Explanations
+
+Type conversion is the process of changing the data type of a variable or value in Python. This can be done using the built-in functions such as int(), float(), and str(). String formatting is the process of inserting values into a string using placeholders. This can be done using the format() method or f-strings.
+
+## Examples
+
+- x = int(5.5)  # convert a float to an integer
+- y = str(5)  # convert an integer to a string
+- z = 'The value is {}'.format(5)  # use the format() method to insert a value into a string
+
+## Summary Points
+
+- Type conversion is the process of changing the data type of a variable or value in Python
+- Type conversion can be done using built-in functions such as int(), float(), and str()
+- String formatting is the process of inserting values into a string using placeholders
+- The format() method and f-strings can be used for string formatting
+- Type conversion can sometimes result in loss of data or precision
+
+## Self-Assessment Questions
+
+Q: What is type conversion in Python?
+A: Type conversion is the process of changing the data type of a variable or value in Python.
+
+Q: How do you convert a float to an integer in Python?
+A: You can use the int() function to convert a float to an integer.
+
+Q: What is the purpose of the format() method in Python?
+A: The format() method is used to insert values into a string using placeholders.
+

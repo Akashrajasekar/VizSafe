@@ -1,0 +1,37 @@
+# 3.2: Working with Modules
+
+## Key Concepts
+
+- Modules
+- Importing modules
+- Module functions and variables
+- Custom modules
+
+## Explanations
+
+In Python, a module is a file that contains a collection of related functions, variables, and classes. Modules are used to organize code and make it reusable. To use a module, you need to import it into your program using the 'import' statement. Once a module is imported, you can access its functions and variables using the module name.
+
+## Examples
+
+- Example: Import the 'math' module and use its 'sin' function to calculate the sine of a number.
+- Example: Import the 'random' module and use its 'randint' function to generate a random integer.
+- Example: Create a custom module called 'my_module' with a function called 'greet' that prints a greeting message. Then, import the module and call the function.
+
+## Summary Points
+
+- Modules are files that contain a collection of related functions, variables, and classes
+- Modules can be imported using the 'import' statement
+- Modules can be used to organize code and make it reusable
+- Custom modules can be created by defining a new file with a '.py' extension
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the 'import' statement in Python?
+A: The 'import' statement is used to import a module into a program.
+
+Q: How can you access the functions and variables of a module?
+A: You can access the functions and variables of a module using the module name.
+
+Q: How can you create a custom module?
+A: You can create a custom module by defining a new file with a '.py' extension and adding functions, variables, and classes to it.
+

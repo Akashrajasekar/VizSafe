@@ -1,0 +1,39 @@
+# Subsection 4.3: File Input/Output
+
+## Key Concepts
+
+- Files
+- Reading files
+- Writing files
+- File modes
+- Exceptions
+
+## Explanations
+
+In Python, you can read and write files using various functions and methods. You can open a file in read mode, write mode, or append mode, and you can use the read method to read the contents of a file, and the write method to write to a file. You can also use the close method to close a file after you are done with it. Files are useful for storing and processing large amounts of data, such as text or images.
+
+## Examples
+
+- Opening a file: my_file = open('example.txt', 'r')
+- Reading a file: my_file.read()  # returns the contents of the file
+- Writing to a file: my_file = open('example.txt', 'w'); my_file.write('Hello World')
+
+## Summary Points
+
+- You can read and write files using various functions and methods
+- Files can be opened in read mode, write mode, or append mode
+- You can use the read method to read the contents of a file, and the write method to write to a file
+- You can use the close method to close a file after you are done with it
+- You can use the with statement to automatically close a file
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the open function in Python?
+A: The open function is used to open a file in a specific mode, such as read mode or write mode.
+
+Q: What is the difference between read mode and write mode?
+A: Read mode allows you to read the contents of a file, while write mode allows you to write to a file.
+
+Q: What is the purpose of the close method?
+A: The close method is used to close a file after you are done with it.
+

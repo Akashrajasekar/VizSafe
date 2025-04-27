@@ -1,0 +1,38 @@
+# 5.4: Debugging and Troubleshooting Techniques
+
+## Key Concepts
+
+- Debugging
+- Troubleshooting
+- pdb module
+- Logging
+
+## Explanations
+
+When writing code, it is common to encounter errors or bugs. Debugging and troubleshooting are essential skills for identifying and fixing these issues. Debugging involves using tools and techniques to identify the source of an error, while troubleshooting involves using a systematic approach to identify and fix the problem.
+
+## Examples
+
+- Using the pdb module to set breakpoints and step through the code to identify an error
+- Using logging to write messages to a log file and track the program's execution
+- Using a systematic approach to troubleshoot a problem, such as identifying the symptoms, gathering information, and testing hypotheses
+
+## Summary Points
+
+- Debugging involves using tools and techniques to identify the source of an error
+- Troubleshooting involves using a systematic approach to identify and fix a problem
+- The pdb module provides a debugger for Python programs
+- Logging is an important technique for debugging and troubleshooting
+- Debugging and troubleshooting are crucial for ensuring the code is correct and reliable
+
+## Self-Assessment Questions
+
+Q: What is the main purpose of the pdb module?
+A: To provide a debugger for Python programs
+
+Q: What is the main purpose of logging?
+A: To write messages to a log file and track the program's execution
+
+Q: What is the main purpose of debugging and troubleshooting?
+A: To identify and fix errors and ensure the code is correct and reliable
+

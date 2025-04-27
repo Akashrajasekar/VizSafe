@@ -1,0 +1,37 @@
+# Subsection 4.2: Introduction to Modules
+
+## Key Concepts
+
+- Modules
+- Importing modules
+- Standard library modules
+
+## Explanations
+
+Modules are pre-written code libraries that provide additional functionality to Python programs. They can be imported into a program to extend its capabilities. Modules can contain functions, classes, and variables that can be used by the program. The standard library modules are a collection of modules that come with the Python installation and provide a wide range of functionalities, including file input/output, networking, and data structures.
+
+## Examples
+
+- Example: Importing the math module - import math
+- Example: Using the math module to calculate the square root - math.sqrt(4)
+- Example: Importing a specific function from the math module - from math import sin
+
+## Summary Points
+
+- Modules are pre-written code libraries that extend Python's capabilities.
+- Modules can be imported into a program using the 'import' statement.
+- The standard library modules provide a wide range of functionalities.
+- Modules promote code reuse and avoid code duplication.
+- Modules make it easier to distribute and maintain large programs.
+
+## Self-Assessment Questions
+
+Q: What is the purpose of importing a module in Python?
+A: To extend the program's capabilities and provide additional functionality.
+
+Q: What is the standard library in Python?
+A: A collection of modules that come with the Python installation and provide a wide range of functionalities.
+
+Q: How do you import a specific function from a module?
+A: Using the 'from' keyword followed by the module name and the function name.
+

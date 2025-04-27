@@ -1,0 +1,10 @@
+=== COURSE GENERATION INTERACTION ===
+
+Timestamp: 20250427_205255
+Interaction ID: d2c9a5ee-b21d-49af-9b6e-b7d55b6431f6
+
+--- QUESTIONS AND RESPONSES ---
+
+Q1: Which course would you like to generate?
+A1: [Waiting for response...]
+

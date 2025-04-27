@@ -1,0 +1,37 @@
+# Subsection 4.1: Defining and Using Functions
+
+## Key Concepts
+
+- Function definition
+- Function calls
+- Argument passing
+
+## Explanations
+
+In Python, a function is a block of code that can be executed multiple times from different parts of a program. To define a function, you use the 'def' keyword followed by the function name and a list of parameters in parentheses. Functions can take arguments, which are values passed to the function when it is called. These arguments can be used within the function to perform specific tasks. Functions can also return values, which can be used by the caller. This allows for code reuse, making programs more efficient and easier to maintain.
+
+## Examples
+
+- Example: Defining a simple function to greet someone - def greet(name): print('Hello, ' + name)
+- Example: Calling the greet function - greet('John')
+- Example: Defining a function with return value - def add(a, b): return a + b
+
+## Summary Points
+
+- Functions are reusable blocks of code defined with the 'def' keyword.
+- Functions can take arguments and return values.
+- Functions promote code reuse, efficiency, and maintainability.
+- Functions help organize code into logical, manageable sections.
+- Functions can be reused across different programs.
+
+## Self-Assessment Questions
+
+Q: What keyword is used to define a function in Python?
+A: def
+
+Q: What is the purpose of passing arguments to a function?
+A: To provide values that can be used within the function to perform specific tasks.
+
+Q: What is returned by a function if no explicit return value is specified?
+A: None
+

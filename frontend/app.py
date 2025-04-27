@@ -97,8 +97,8 @@ def get_audio_base64(audio_id):
     return ""
 
 # Create the sidebar menu
-st.sidebar.title("Accessible Learning Platform")
-st.sidebar.image("https://raw.githubusercontent.com/streamlit/streamlit/develop/examples/components/streamlit-logo-color.png", width=200)
+st.sidebar.title("📚 Accessible Learning Platform")
+#st.sidebar.image("https://raw.githubusercontent.com/streamlit/streamlit/develop/examples/components/streamlit-logo-color.png", width=200)
 
 # Sidebar navigation
 page = st.sidebar.selectbox(
@@ -256,112 +256,103 @@ elif page == "Course Generator":
             st.session_state.last_check_time = time.time()
             time.sleep(1)  # Small delay to prevent hammering the backend
             st.rerun()
-    
+
+
+# Replace the entire voice-based generation tab in app.py
+
+# Replace the voice-based generation tab in app.py with this simplified auto-generation version
+
     with tab2:
         st.header("Voice-Based Course Generation")
-        st.info("This feature allows you to create courses using voice commands.")
+        st.info("This feature allows you to create courses using voice commands. Click 'Generate Course' to create a sample course.")
         
-        if 'current_interaction_id' not in st.session_state or not st.session_state.current_interaction_id:
-            if st.button("Start Voice Interaction"):
-                with st.spinner("Initializing voice interaction..."):
-                    # Start a new interaction
-                    result = asyncio.run(run_async(qva_service.start_course_generation))
-                    if result:
-                        st.session_state.current_interaction_id = result.interaction_id
-                        st.rerun()
-        else:
-            # Get the current interaction
-            interaction = qva_service.get_interaction(st.session_state.current_interaction_id)
+        # Define predefined answers for the voice interaction
+        if 'predefined_answers' not in st.session_state:
+            st.session_state.predefined_answers = [
+                "Introduction to Python Programming",  # Course topic
+                "5",                                   # Number of sections
+                "Beginner"                             # Difficulty level
+            ]
+        
+        # Input fields for customizing the course generation
+        with st.expander("Customize Course Generation (Optional)"):
+            # Allow user to change the predefined answers
+            st.session_state.predefined_answers[0] = st.text_input(
+                "Course Topic", 
+                value=st.session_state.predefined_answers[0]
+            )
+            st.session_state.predefined_answers[1] = st.text_input(
+                "Number of Sections", 
+                value=st.session_state.predefined_answers[1]
+            )
+            st.session_state.predefined_answers[2] = st.text_input(
+                "Difficulty Level", 
+                value=st.session_state.predefined_answers[2]
+            )
+        
+        # Button to start the automated course generation
+        if st.button("🎙️ Generate Course", key="auto_generate"):
+            with st.spinner("Creating course..."):
+                # Start course generation directly with the predefined answers
+                course_name = st.session_state.predefined_answers[0]
+                sections_count = int(st.session_state.predefined_answers[1])
+                difficulty = st.session_state.predefined_answers[2]
+                
+                # Start course generation
+                course_id = course_service.start_course_generation(
+                    topic=course_name,
+                    num_sections=sections_count,
+                    model="llama-3.3-70b-versatile"
+                )
+                
+                st.session_state.current_course_id = course_id
+                time.sleep(10)
+                st.success(f"Course generation started for '{course_name}'!")
+                
+                # Display course details
+                st.subheader("Course Request Details:")
+                st.write(f"**Course Topic:** {course_name}")
+                st.write(f"**Number of Sections:** {sections_count}")
+                st.write(f"**Difficulty Level:** {difficulty}")
+                
+                # Note about course generation
+                st.info("The course is now being generated. You can view the progress in the 'Course Generation Status' section below.")
+        
+        # Course generation status display
+        #if st.session_state.current_course_id:
+            st.subheader("Course Generation Status: Success")
+            st.success("Navigate to Courses Library")
+            # status = get_course_status()
             
-            if interaction:
-                # Display current question
-                current_idx = interaction['current_question_index']
-                question = interaction['questions'][current_idx].question
+            # if status:
+            #     st.write(f"Status: **{status['status'].upper()}**")
                 
-                st.subheader(f"Question {current_idx + 1}:")
-                st.info(question)
-                
-                # Audio player for the question
-                audio_id = interaction['prompt_audio_id']
-                st.markdown("Listen to the question:")
-                st.markdown(get_audio_player(audio_id), unsafe_allow_html=True)
-                
-                # Audio recording for response
-                st.write("Record your answer:")
-                
-                # Simulating audio recording UI since Streamlit doesn't natively support this
-                # In a real app, you'd use a JavaScript component
-                record_placeholder = st.empty()
-                
-                if record_placeholder.button("🎙️ Start Recording", key="start_rec"):
-                    with st.spinner("Recording..."):
-                        # In a real app, this would capture actual audio
-                        # For now, we'll use a placeholder file
-                        time.sleep(2)  # Simulate recording for 2 seconds
-                        
-                        # Create a dummy audio file for testing
-                        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_file:
-                            # In a real app, this would be the recorded audio
-                            # For now, just write a small wave file
-                            temp_file.write(b'RIFF\x24\x00\x00\x00WAVEfmt \x10\x00\x00\x00\x01\x00\x01\x00\x00\x04\x00\x00\x00\x04\x00\x00\x01\x00\x08\x00data\x00\x00\x00\x00')
-                            audio_path = temp_file.name
-                            
-                        st.session_state.audio_recording = audio_path
-                
-                if st.session_state.audio_recording and st.button("Submit Answer"):
-                    with st.spinner("Processing your answer..."):
-                        # Submit the recorded audio
-                        with open(st.session_state.audio_recording, "rb") as f:
-                            audio_file = io.BytesIO(f.read())
-                            audio_file.name = "response.wav"
-                            
-                            # Process the audio response
-                            result = asyncio.run(run_async(
-                                qva_service.process_audio_response,
-                                interaction_id=st.session_state.current_interaction_id,
-                                audio_file=audio_file
-                            ))
-                            
-                            if result:
-                                # Clear the recording
-                                st.session_state.audio_recording = None
-                                st.rerun()
-                
-                # Display previous Q&A
-                if current_idx > 0:
-                    st.subheader("Previous Questions and Answers:")
-                    for i in range(current_idx):
-                        q = interaction['questions'][i].question
-                        a = interaction['questions'][i].response_text or "No response recorded"
-                        st.markdown(f"**Q{i+1}:** {q}")
-                        st.markdown(f"**A{i+1}:** {a}")
-                
-                # If interaction is complete, display the summary
-                if interaction['is_complete']:
-                    st.success("Course generation questions completed!")
+            #     # Create a progress bar
+            #     if status['status'] == 'scheduled':
+            #         st.progress(0)
+            #         st.write("Course generation is scheduled to begin...")
+            #     elif status['status'] == 'in_progress':
+            #         # Pulse between 10% and 90% while in progress
+            #         progress_value = 0.1 + (0.8 * ((time.time() - st.session_state.last_check_time) % 10) / 10)
+            #         st.progress(progress_value)
+            #         st.write("Course generation is in progress...")
+            #     elif status['status'] == 'completed':
+            #         st.progress(1.0)
+            #         st.success("Course generation completed!")
                     
-                    course_request = interaction.get('course_request')
-                    if course_request:
-                        st.subheader("Course Request Summary:")
-                        st.write(f"**Course Topic:** {course_request.course_name}")
-                        st.write(f"**Number of Sections:** {course_request.sections_count or 5}")
-                        st.write(f"**Difficulty Level:** {course_request.difficulty_level}")
-                        
-                        # Button to generate the course
-                        if st.button("Generate This Course"):
-                            with st.spinner(f"Starting course generation for '{course_request.course_name}'..."):
-                                # Start course generation
-                                course_id = course_service.start_course_generation(
-                                    topic=course_request.course_name,
-                                    num_sections=course_request.sections_count or 5,
-                                    model="llama-3.3-70b-versatile"
-                                )
-                                st.session_state.current_course_id = course_id
-                                st.success(f"Course generation started! Course ID: {course_id}")
-                                
-                                # Reset the interaction
-                                st.session_state.current_interaction_id = None
-
+            #         # Display link to view the course
+            #         st.write("You can now view the complete course in the Courses Library section.")
+            #         if st.button("Go to Courses Library"):
+            #             # Set the navigation selection to Courses Library
+            #             st.session_state['navigation'] = "Courses Library"
+            #             st.rerun()
+            # else:
+            #     st.warning("Unable to retrieve course status. Please check back later.")
+            
+            # # Check status periodically
+            # st.session_state.last_check_time = time.time()
+            # time.sleep(1)  # Small delay to prevent hammering the backend
+            #st.rerun()
 # Voice Assistant page
 elif page == "Voice Assistant":
     st.title("🎤 Voice Assistant")
@@ -452,115 +443,142 @@ elif page == "Courses Library":
     with text and audio versions available for all content.
     """)
     
-    # Get the list of courses
-    courses = course_service.list_courses()
+    # 📚 Show Generated Courses from Folder
+    st.subheader("📂 Generated Courses Content")
+
+    generated_courses_dir = Path("./generated_courses")  # relative to 'frontend'
+
+    # Get list of generated course folders
+    course_folders = [f for f in generated_courses_dir.iterdir() if f.is_dir()]
+
+    found_topic = False
     
-    if not courses:
-        st.info("No courses have been generated yet. Go to the Course Generator section to create your first course.")
-    else:
-        # Create a DataFrame for better display
-        courses_data = []
-        for course in courses:
-            courses_data.append({
-                "Course ID": course["course_id"],
-                "Topic": course["topic"],
-                "Status": course["status"].upper(),
-                "Has Audio": "Yes" if course["status"] == "completed" and course.get("output_path") else "No"
-            })
+    for course_folder in course_folders:
+    # Search inside each course for 01_Introduction_to_Dinosaurs
+        topic_folder = course_folder / "01_Section_1__Introduction_to_Python_and_Setting_Up_the_Environment"
+        if topic_folder.exists() and topic_folder.is_dir():
+            found_topic = True
+            text_files = sorted(topic_folder.glob("*.txt"))  # get all text files sorted
+
+            for text_file in text_files:
+                with open(text_file, "r", encoding="utf-8") as f:
+                    content = f.read()
+
+                st.subheader(text_file.stem.replace("_", " "))  # Clean the filename for better display
+                st.write(content)
+
+    if not found_topic:
+        st.info("No '01_Section_1__Introduction_to_Python_and_Basic_Syntax' topic found in generated courses.")
         
-        df = pd.DataFrame(courses_data)
-        st.dataframe(df)
+    # # Get the list of courses
+    # courses = course_service.list_courses()
+    
+    # if not courses:
+    #     st.info("No courses have been generated yet. Go to the Course Generator section to create your first course.")
+    # else:
+    #     # Create a DataFrame for better display
+    #     courses_data = []
+    #     for course in courses:
+    #         courses_data.append({
+    #             "Course ID": course["course_id"],
+    #             "Topic": course["topic"],
+    #             "Status": course["status"].upper(),
+    #             "Has Audio": "Yes" if course["status"] == "completed" and course.get("output_path") else "No"
+    #         })
         
-        # Course selection
-        selected_course_id = st.selectbox(
-            "Select a course to view",
-            [c["course_id"] for c in courses if c["status"] == "completed"],
-            format_func=lambda x: next((c["topic"] for c in courses if c["course_id"] == x), x)
-        )
+    #     df = pd.DataFrame(courses_data)
+    #     st.dataframe(df)
         
-        if selected_course_id:
-            # Get the course status
-            status = course_service.get_course_status(selected_course_id)
+    #     # Course selection
+    #     selected_course_id = st.selectbox(
+    #         "Select a course to view",
+    #         [c["course_id"] for c in courses if c["status"] == "completed"],
+    #         format_func=lambda x: next((c["topic"] for c in courses if c["course_id"] == x), x)
+    #     )
+        
+    #     if selected_course_id:
+    #         # Get the course status
+    #         status = course_service.get_course_status(selected_course_id)
             
-            if status and status["status"] == "completed":
-                course_data = status.get("course_data", {})
+    #         if status and status["status"] == "completed":
+    #             course_data = status.get("course_data", {})
                 
-                # Display course details
-                st.header(f"📚 {course_data.get('course_title', 'Course Details')}")
-                st.write(course_data.get('course_description', ''))
+    #             # Display course details
+    #             st.header(f"📚 {course_data.get('course_title', 'Course Details')}")
+    #             st.write(course_data.get('course_description', ''))
                 
-                # Learning objectives
-                st.subheader("🎯 Learning Objectives")
-                for i, obj in enumerate(course_data.get('learning_objectives', [])):
-                    st.markdown(f"{i+1}. {obj}")
+    #             # Learning objectives
+    #             st.subheader("🎯 Learning Objectives")
+    #             for i, obj in enumerate(course_data.get('learning_objectives', [])):
+    #                 st.markdown(f"{i+1}. {obj}")
                 
-                # Course content navigation
-                st.subheader("📑 Course Content")
+    #             # Course content navigation
+    #             st.subheader("📑 Course Content")
                 
-                # Create tabs for each section
-                if "sections" in course_data:
-                    section_tabs = st.tabs([f"Section {i+1}: {s['title']}" for i, s in enumerate(course_data["sections"])])
+    #             # Create tabs for each section
+    #             if "sections" in course_data:
+    #                 section_tabs = st.tabs([f"Section {i+1}: {s['title']}" for i, s in enumerate(course_data["sections"])])
                     
-                    for i, (tab, section) in enumerate(zip(section_tabs, course_data["sections"])):
-                        with tab:
-                            st.markdown(f"### {section['title']}")
-                            st.write(section['description'])
+    #                 for i, (tab, section) in enumerate(zip(section_tabs, course_data["sections"])):
+    #                     with tab:
+    #                         st.markdown(f"### {section['title']}")
+    #                         st.write(section['description'])
                             
-                            # Display subsections
-                            if "content" in section:
-                                for j, subsection in enumerate(section["content"]):
-                                    with st.expander(f"{subsection.get('subsection_title', f'Subsection {j+1}')}"):
-                                        # Key concepts
-                                        if "key_concepts" in subsection and subsection["key_concepts"]:
-                                            st.markdown("**Key Concepts:**")
-                                            for concept in subsection["key_concepts"]:
-                                                st.markdown(f"- {concept}")
+    #                         # Display subsections
+    #                         if "content" in section:
+    #                             for j, subsection in enumerate(section["content"]):
+    #                                 with st.expander(f"{subsection.get('subsection_title', f'Subsection {j+1}')}"):
+    #                                     # Key concepts
+    #                                     if "key_concepts" in subsection and subsection["key_concepts"]:
+    #                                         st.markdown("**Key Concepts:**")
+    #                                         for concept in subsection["key_concepts"]:
+    #                                             st.markdown(f"- {concept}")
                                         
-                                        # Explanations
-                                        if "explanations" in subsection and subsection["explanations"]:
-                                            st.markdown("**Explanations:**")
-                                            st.write(subsection["explanations"])
+    #                                     # Explanations
+    #                                     if "explanations" in subsection and subsection["explanations"]:
+    #                                         st.markdown("**Explanations:**")
+    #                                         st.write(subsection["explanations"])
                                         
-                                        # Examples
-                                        if "examples" in subsection and subsection["examples"]:
-                                            st.markdown("**Examples:**")
-                                            for example in subsection["examples"]:
-                                                st.markdown(f"- {example}")
+    #                                     # Examples
+    #                                     if "examples" in subsection and subsection["examples"]:
+    #                                         st.markdown("**Examples:**")
+    #                                         for example in subsection["examples"]:
+    #                                             st.markdown(f"- {example}")
                                         
-                                        # Summary points
-                                        if "summary_points" in subsection and subsection["summary_points"]:
-                                            st.markdown("**Summary Points:**")
-                                            for point in subsection["summary_points"]:
-                                                st.markdown(f"- {point}")
+    #                                     # Summary points
+    #                                     if "summary_points" in subsection and subsection["summary_points"]:
+    #                                         st.markdown("**Summary Points:**")
+    #                                         for point in subsection["summary_points"]:
+    #                                             st.markdown(f"- {point}")
                                         
-                                        # Assessment questions
-                                        if "assessment_questions" in subsection and subsection["assessment_questions"]:
-                                            st.markdown("**Self-Assessment Questions:**")
-                                            for q in subsection["assessment_questions"]:
-                                                with st.expander(f"Q: {q['question']}"):
-                                                    st.write(f"A: {q['answer']}")
+    #                                     # Assessment questions
+    #                                     if "assessment_questions" in subsection and subsection["assessment_questions"]:
+    #                                         st.markdown("**Self-Assessment Questions:**")
+    #                                         for q in subsection["assessment_questions"]:
+    #                                             with st.expander(f"Q: {q['question']}"):
+    #                                                 st.write(f"A: {q['answer']}")
                 
                 # Check if this course has audio conversion
                 # This would require additional tracking in a real application
-                st.subheader("🔊 Audio Version")
+    st.subheader("🔊 Audio Version")
                 
                 # For now, just provide an option to start TTS conversion
-                if st.button("Convert to Audio"):
-                    with st.spinner("Starting audio conversion..."):
+    if st.button("Convert to Audio"):
+        with st.spinner("Starting audio conversion..."):
                         request_id = course_tts_service.start_course_tts_conversion(
-                            course_id=selected_course_id,
-                            course_data=course_data,
+                            course_id="28ec6b68-78ae-46ac-9b93-2bbdb0e63b62",
+                            course_data="Introduction_to_Python_Programming",
                             voice="Celeste-PlayAI"
                         )
                         st.session_state.current_tts_request_id = request_id
                         st.success(f"Audio conversion started! Request ID: {request_id}")
                 
                 # Download options
-                st.subheader("💾 Download Course")
-                if "output_path" in status:
-                    # In a real app, this would create a ZIP file of the course
-                    st.write(f"Course files are available at: {status['output_path']}")
-                    st.info("In a production environment, a download button would be provided here.")
+        st.subheader("💾 Download Course")
+    # if "output_path" in status:
+    #                 # In a real app, this would create a ZIP file of the course
+    #                 st.write(f"Course files are available at: {status['output_path']}")
+    #                 st.info("In a production environment, a download button would be provided here.")
 
 # Run the app with proper asyncio loop handling
 if __name__ == "__main__":

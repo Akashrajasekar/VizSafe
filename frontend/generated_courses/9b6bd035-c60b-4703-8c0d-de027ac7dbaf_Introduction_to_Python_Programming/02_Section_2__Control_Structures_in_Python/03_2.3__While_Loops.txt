@@ -1,0 +1,37 @@
+# 2.3: While Loops
+
+## Key Concepts
+
+- while loops
+- conditional expressions
+- iteration
+
+## Explanations
+
+While loops are used to repeat a block of code while a certain condition is met. The while loop will continue to execute the code as long as the condition is true. In Python, the while loop is written using the 'while' keyword followed by the condition and a colon. The code to be executed is indented under the while loop.
+
+## Examples
+
+- i = 1; while i <= 10: print(i); i += 1
+- password = ''; while password != 'secret': password = input('Enter password: ')
+- x = 0; while x < 5: print(x); x += 1; if x == 3: print('x is equal to 3')
+
+## Summary Points
+
+- While loops are used to repeat a block of code while a certain condition is met
+- The while loop will continue to execute the code as long as the condition is true
+- While loops can be used with conditional expressions, such as checking if a user has entered a valid input
+- While loops can be used with nested loops, such as a while loop inside a for loop
+- While loops allow for more complex iteration and manipulation of data
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the while loop in Python?
+A: The while loop is used to repeat a block of code while a certain condition is met.
+
+Q: What happens when the condition in a while loop is false?
+A: The while loop will stop executing the code when the condition is false.
+
+Q: Can while loops be used with nested loops?
+A: Yes, while loops can be used with nested loops, such as a while loop inside a for loop.
+

@@ -1,0 +1,37 @@
+# 3.1: Defining and Calling Functions
+
+## Key Concepts
+
+- Function definition
+- Function parameters
+- Return types
+
+## Explanations
+
+To call a function, you simply use the function name followed by parentheses containing any required arguments. The function will then execute and return any specified return value. Functions can be called from anywhere in a program, making them a powerful tool for code organization and reuse.
+
+## Examples
+
+- def greet(name): print('Hello, ' + name)
+- greet('John')  # Output: Hello, John
+- def add(a, b): return a + b; result = add(2, 3); print(result)  # Output: 5
+
+## Summary Points
+
+- Functions are blocks of code that can be executed multiple times
+- Functions can accept parameters and return values
+- Functions are useful for organizing code and reducing repetition
+- Functions can be called from anywhere in a program
+- Functions can return values of any data type
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the 'def' keyword in Python?
+A: The 'def' keyword is used to define a function.
+
+Q: How do you call a function in Python?
+A: You call a function by using the function name followed by parentheses containing any required arguments.
+
+Q: What is the purpose of the 'return' statement in a function?
+A: The 'return' statement is used to specify the value that a function returns.
+

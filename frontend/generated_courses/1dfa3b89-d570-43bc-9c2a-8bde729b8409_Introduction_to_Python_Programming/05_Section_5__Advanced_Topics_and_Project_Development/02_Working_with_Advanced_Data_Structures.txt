@@ -1,0 +1,37 @@
+# Working with Advanced Data Structures
+
+## Key Concepts
+
+- sets
+- dictionaries
+- data structures
+
+## Explanations
+
+In Python, we have several advanced data structures that can be used to store and manipulate data. Sets are unordered collections of unique elements, and they can be used to store a group of items without duplicates. Dictionaries are unordered collections of key-value pairs, and they can be used to store data with a specific key or identifier.
+
+## Examples
+
+- Creating a set: colors = set(['red', 'green', 'blue'])
+- Creating a dictionary: person = {'name': 'John', 'age': 30}
+- Using the get() method: print(person.get('name'))
+
+## Summary Points
+
+- Sets are unordered collections of unique elements
+- Dictionaries are unordered collections of key-value pairs
+- Sets can be used to store a group of unique items
+- Dictionaries can be used to store data with a specific key or identifier
+- Sets and dictionaries have various methods that can be used to manipulate the data
+
+## Self-Assessment Questions
+
+Q: What is the purpose of a set in Python?
+A: To store a group of unique items
+
+Q: What is the purpose of a dictionary in Python?
+A: To store data with a specific key or identifier
+
+Q: How can you retrieve a value from a dictionary by its key?
+A: Using the get() method
+

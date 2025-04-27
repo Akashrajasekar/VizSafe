@@ -1,0 +1,40 @@
+# 2.1 Introduction to Data Types
+
+## Key Concepts
+
+- Numbers
+- Strings
+- Booleans
+- Lists
+- Tuples
+- Dictionaries
+
+## Explanations
+
+In Python, data types are the categories of data that a variable can hold. There are several basic data types in Python, including numbers, strings, booleans, lists, tuples, and dictionaries. Numbers can be either integers or floating-point numbers. Strings are sequences of characters, such as words or sentences, and are enclosed in quotes. Booleans are true or false values. Lists are ordered collections of items that can be of any data type, including strings, numbers, and other lists. Tuples are similar to lists but are immutable, meaning they cannot be changed after they are created. Dictionaries are unordered collections of key-value pairs, where each key is unique and maps to a specific value.
+
+## Examples
+
+- x = 5  # assign an integer to a variable
+- y = 'hello'  # assign a string to a variable
+- fruits = ['apple', 'banana', 'cherry']  # assign a list to a variable
+
+## Summary Points
+
+- Python has several basic data types, including numbers, strings, booleans, lists, tuples, and dictionaries
+- Variables can be assigned different data types using the assignment operator (=)
+- The type() function can be used to determine the data type of a variable
+- Python has a dynamic typing system, which means that you do not need to declare the data type of a variable before using it
+- The data type of a variable is determined by the type of value that is assigned to it
+
+## Self-Assessment Questions
+
+Q: What are the basic data types in Python?
+A: The basic data types in Python are numbers, strings, booleans, lists, tuples, and dictionaries.
+
+Q: How do you assign a string to a variable in Python?
+A: You can assign a string to a variable by enclosing the string in quotes and using the assignment operator (=).
+
+Q: What is the purpose of the type() function in Python?
+A: The type() function is used to determine the data type of a variable.
+

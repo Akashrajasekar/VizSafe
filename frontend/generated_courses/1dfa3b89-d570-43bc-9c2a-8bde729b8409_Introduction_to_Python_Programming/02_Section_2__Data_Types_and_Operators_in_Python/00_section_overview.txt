@@ -1,0 +1,4 @@
+# Section 2: Section 2: Data Types and Operators in Python
+
+This section delves into the different data types available in Python, such as numbers, strings, and lists, and explains how to use operators for various operations.
+

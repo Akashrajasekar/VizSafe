@@ -1,0 +1,4 @@
+# Section 4: Section 4: Functions, Modules, and File Input/Output
+
+This section introduces functions for reusing code, modules for extending Python's capabilities, and file input/output for data persistence.
+

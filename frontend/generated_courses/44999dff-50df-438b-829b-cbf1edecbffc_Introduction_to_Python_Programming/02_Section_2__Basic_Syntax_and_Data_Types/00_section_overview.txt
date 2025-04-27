@@ -1,0 +1,4 @@
+# Section 2: Section 2: Basic Syntax and Data Types
+
+This section covers the basic syntax and data types in Python, including variables, operators, and control structures.
+

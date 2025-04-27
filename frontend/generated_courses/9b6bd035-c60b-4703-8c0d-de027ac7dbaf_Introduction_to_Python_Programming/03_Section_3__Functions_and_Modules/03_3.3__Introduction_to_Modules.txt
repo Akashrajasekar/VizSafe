@@ -1,0 +1,37 @@
+# 3.3: Introduction to Modules
+
+## Key Concepts
+
+- Modules
+- Importing modules
+- Module functions
+
+## Explanations
+
+When you import a module, you can use the functions and variables defined in the module as if they were part of your own program. This makes it easy to reuse code and avoid duplicating effort. Modules are also a great way to learn about new functions and techniques, as they often provide example code and documentation.
+
+## Examples
+
+- import math; print(math.pi)  # Output: 3.14159
+- import random; print(random.randint(1, 10))  # Output: a random number between 1 and 10
+- from math import sin, cos; print(sin(0))  # Output: 0.0
+
+## Summary Points
+
+- Modules are files that contain a collection of related functions and variables
+- Modules can be imported into a program using the 'import' statement
+- Modules can contain a wide range of functions and variables
+- Importing modules allows you to reuse code and avoid duplicating effort
+- Modules provide example code and documentation to help you learn
+
+## Self-Assessment Questions
+
+Q: What is a module in Python?
+A: A module is a file that contains a collection of related functions, classes, and variables.
+
+Q: How do you import a module in Python?
+A: You import a module using the 'import' statement.
+
+Q: What is the benefit of importing modules in Python?
+A: Importing modules allows you to reuse code and avoid duplicating effort.
+

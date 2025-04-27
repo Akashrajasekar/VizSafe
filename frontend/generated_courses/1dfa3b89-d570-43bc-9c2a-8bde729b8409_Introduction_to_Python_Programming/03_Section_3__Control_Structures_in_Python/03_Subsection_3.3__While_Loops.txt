@@ -1,0 +1,37 @@
+# Subsection 3.3: While Loops
+
+## Key Concepts
+
+- while loops
+- loop conditions
+- infinite loops
+
+## Explanations
+
+While loops are used in Python to repeat a block of code while a condition is true. The loop continues until the condition is false, at which point the loop exits. While loops are useful for performing repetitive tasks, such as reading input from a user or waiting for a certain event to occur. However, if the condition is always true, the loop will become an infinite loop, which can cause the program to crash or become unresponsive. For example, a program can use a while loop to read input from a user until the user enters a certain command, or to wait for a certain event to occur.
+
+## Examples
+
+- x = 0; while x < 10: print(x); x += 1
+- password = ''; while password != 'secret': password = input('Enter password: ')
+- count = 0; while count < 5: print(count); count += 1
+
+## Summary Points
+
+- while loops are used to repeat a block of code while a condition is true
+- the loop continues until the condition is false
+- while loops are useful for performing repetitive tasks
+- infinite loops can occur if the condition is always true
+- while loops can be used to read input from a user or wait for a certain event to occur
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the while loop in Python?
+A: The while loop is used to repeat a block of code while a condition is true.
+
+Q: What happens if the condition in a while loop is always true?
+A: If the condition is always true, the loop will become an infinite loop, which can cause the program to crash or become unresponsive.
+
+Q: What are some common use cases for while loops?
+A: While loops are useful for performing repetitive tasks, such as reading input from a user or waiting for a certain event to occur.
+

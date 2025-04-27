@@ -1,0 +1,37 @@
+# Subsection 4.3: Reading and Writing Files
+
+## Key Concepts
+
+- File input/output
+- Text files
+- Binary files
+
+## Explanations
+
+File input/output is the process of reading and writing data to files. In Python, you can work with text files and binary files. Text files contain human-readable data, while binary files contain machine-readable data. To work with files, you need to open them in read or write mode. The 'open' function is used to open a file, and it returns a file object that can be used to read or write data.
+
+## Examples
+
+- Example: Opening a text file in read mode - file = open('example.txt', 'r')
+- Example: Reading the contents of a text file - contents = file.read()
+- Example: Writing data to a text file - file = open('example.txt', 'w'); file.write('Hello, World!')
+
+## Summary Points
+
+- File input/output is the process of reading and writing data to files.
+- You can work with text files and binary files in Python.
+- The 'open' function is used to open a file, and it returns a file object.
+- You need to close the file after you are done working with it.
+- The 'with' statement can be used to automatically close the file.
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the 'open' function in Python?
+A: To open a file and return a file object that can be used to read or write data.
+
+Q: What is the difference between text files and binary files?
+A: Text files contain human-readable data, while binary files contain machine-readable data.
+
+Q: Why is it essential to close a file after you are done working with it?
+A: To free up system resources.
+

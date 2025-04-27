@@ -1,0 +1,4 @@
+# Section 3: Section 3: Functions and Modules
+
+This section covers the creation and use of functions and modules, which are essential for organizing and reusing code.
+

@@ -1,0 +1,37 @@
+# 3.1: Defining and Using Functions
+
+## Key Concepts
+
+- Function definition
+- Function arguments
+- Return values
+- Scope
+
+## Explanations
+
+In Python, a function is a block of code that can be executed multiple times from different parts of a program. To define a function, you use the 'def' keyword followed by the function name and a list of arguments in parentheses. The function body is then defined using indentation. Functions can take arguments, which are values passed to the function when it is called. Functions can also return values, which are values passed back to the caller when the function finishes executing. The scope of a function refers to the region of the code where the function is defined and can be accessed.
+
+## Examples
+
+- Example: Define a function called 'greet' that takes a name as an argument and prints a greeting message. Then, call the function with the argument 'John'.
+- Example: Define a function called 'add' that takes two numbers as arguments and returns their sum. Then, call the function with the arguments 2 and 3, and print the result.
+- Example: Define a function called 'calculate_area' that takes a radius as an argument and returns the area of a circle. Then, call the function with the argument 5, and print the result.
+
+## Summary Points
+
+- Functions are blocks of code that can be executed multiple times
+- Functions can take arguments and return values
+- The scope of a function refers to the region of the code where the function is defined and can be accessed
+- Functions can be used to organize code and reduce repetition
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the 'def' keyword in Python?
+A: The 'def' keyword is used to define a function.
+
+Q: What is the difference between a function argument and a return value?
+A: A function argument is a value passed to the function when it is called, while a return value is a value passed back to the caller when the function finishes executing.
+
+Q: What is the scope of a function?
+A: The scope of a function refers to the region of the code where the function is defined and can be accessed.
+

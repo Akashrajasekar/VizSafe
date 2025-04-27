@@ -1,0 +1,37 @@
+# 1.3: Basic Syntax and First Program
+
+## Key Concepts
+
+- Basic syntax
+- First program
+- Execution
+
+## Explanations
+
+Now that you have set up your Python environment, it's time to write your first Python program. The basic syntax of Python involves using indentation to define the structure of the code, and using keywords and symbols to define the logic of the program. A basic Python program consists of a series of statements, each of which performs a specific task. The program can be executed by running the Python interpreter, which reads the code and performs the tasks defined in the program.
+
+## Examples
+
+- Imagine you are writing a letter to a friend. You need to start with a greeting, followed by the body of the letter, and finally a signature. A Python program is similar, with a series of statements that perform specific tasks.
+- Think of a recipe that you follow to make a cake. The recipe consists of a series of steps, each of which performs a specific task. A Python program is similar, with a series of statements that perform specific tasks.
+- Consider a story that you tell to a friend. The story consists of a series of events, each of which is connected to the previous one. A Python program is similar, with a series of statements that are connected to each other.
+
+## Summary Points
+
+- The basic syntax of Python involves using indentation to define the structure of the code
+- A basic Python program consists of a series of statements, each of which performs a specific task
+- The program can be executed by running the Python interpreter
+- The code should include a print statement to print a message to the screen
+- Variables and conditional statements can be used to make the program more interesting
+
+## Self-Assessment Questions
+
+Q: What is the purpose of indentation in Python?
+A: To define the structure of the code
+
+Q: What is the basic unit of a Python program?
+A: A statement
+
+Q: How is a Python program executed?
+A: By running the Python interpreter
+

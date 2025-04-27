@@ -1,0 +1,38 @@
+# Introduction to Object-Oriented Programming
+
+## Key Concepts
+
+- classes
+- objects
+- inheritance
+- polymorphism
+
+## Explanations
+
+Object-oriented programming is a way of designing and organizing code that simulates real-world objects and systems. In Python, we can define a class, which is a blueprint or template for creating objects. A class defines the properties and behaviors of an object, such as its attributes and methods. Inheritance is a mechanism that allows one class to inherit the properties and behaviors of another class, creating a hierarchical relationship between classes. Polymorphism is the ability of an object to take on multiple forms, depending on the context in which it is used. This can be achieved through method overriding or method overloading.
+
+## Examples
+
+- Defining a class: class Car: pass
+- Creating an object: my_car = Car()
+- Using inheritance: class ElectricCar(Car): pass
+
+## Summary Points
+
+- Classes define the properties and behaviors of objects
+- Inheritance allows one class to inherit properties and behaviors from another class
+- Polymorphism allows objects to take on multiple forms
+- Method overriding and method overloading can be used to achieve polymorphism
+- Object-oriented programming helps to organize and structure code
+
+## Self-Assessment Questions
+
+Q: What is the purpose of a class in object-oriented programming?
+A: To define the properties and behaviors of an object
+
+Q: What is inheritance in object-oriented programming?
+A: A mechanism that allows one class to inherit properties and behaviors from another class
+
+Q: What is polymorphism in object-oriented programming?
+A: The ability of an object to take on multiple forms
+

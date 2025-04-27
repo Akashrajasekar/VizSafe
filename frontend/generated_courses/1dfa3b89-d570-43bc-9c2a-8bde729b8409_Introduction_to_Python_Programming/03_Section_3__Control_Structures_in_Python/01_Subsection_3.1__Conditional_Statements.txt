@@ -1,0 +1,37 @@
+# Subsection 3.1: Conditional Statements
+
+## Key Concepts
+
+- if statements
+- elif statements
+- else statements
+
+## Explanations
+
+Conditional statements are used in Python to make decisions based on certain conditions. The if statement is used to execute a block of code if a condition is true. The elif statement is used to check another condition if the initial condition is false. The else statement is used to execute a block of code if all conditions are false. These statements are crucial for controlling the flow of a program and making decisions based on user input or data. For example, a program can use an if statement to check if a user is logged in before allowing them to access certain features. The elif statement can be used to check if a user has a certain role or permission. The else statement can be used to display an error message if all conditions are false.
+
+## Examples
+
+- x = 5; if x > 10: print('x is greater than 10'); else: print('x is less than or equal to 10')
+- age = 25; if age >= 18: print('You are an adult'); elif age >= 13: print('You are a teenager'); else: print('You are a child')
+- username = 'admin'; if username == 'admin': print('Welcome admin'); elif username == 'user': print('Welcome user'); else: print('Invalid username')
+
+## Summary Points
+
+- if statements are used to execute code if a condition is true
+- elif statements are used to check another condition if the initial condition is false
+- else statements are used to execute code if all conditions are false
+- conditional statements are used to control the flow of a program
+- conditional statements can be used to make decisions based on user input or data
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the if statement in Python?
+A: The if statement is used to execute a block of code if a condition is true.
+
+Q: What is the difference between an if statement and an elif statement?
+A: The if statement is used to execute code if a condition is true, while the elif statement is used to check another condition if the initial condition is false.
+
+Q: What is the purpose of the else statement in Python?
+A: The else statement is used to execute a block of code if all conditions are false.
+

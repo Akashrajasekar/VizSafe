@@ -1,0 +1,37 @@
+# 5.1: Object-Oriented Programming Basics
+
+## Key Concepts
+
+- Classes
+- Objects
+- Inheritance
+
+## Explanations
+
+Object-oriented programming is a way of designing and organizing code that focuses on objects and their interactions. A class is a blueprint or template for creating objects. It defines the properties and behaviors of an object. An object is an instance of a class, and it has its own set of attributes, which are data, and methods, which are functions that belong to the object. Inheritance is a mechanism that allows one class to inherit the properties and behaviors of another class. This helps to promote code reuse and modularity.
+
+## Examples
+
+- Creating a class called 'Vehicle' with attributes like 'color' and 'speed', and methods like 'accelerate' and 'brake'.
+- Creating a subclass called 'Car' that inherits from the 'Vehicle' class and adds attributes like 'number_of_doors' and 'transmission_type'.
+- Creating an object called 'my_car' that is an instance of the 'Car' class, and using its methods to accelerate and brake.
+
+## Summary Points
+
+- Classes define the properties and behaviors of objects
+- Objects are instances of classes and have their own attributes and methods
+- Inheritance allows one class to inherit the properties and behaviors of another class
+- Object-oriented programming promotes code reuse and modularity
+- Object-oriented programming makes it easier to modify and extend code over time
+
+## Self-Assessment Questions
+
+Q: What is the main purpose of a class in object-oriented programming?
+A: To define the properties and behaviors of an object
+
+Q: What is inheritance in object-oriented programming?
+A: A mechanism that allows one class to inherit the properties and behaviors of another class
+
+Q: What is an object in object-oriented programming?
+A: An instance of a class with its own set of attributes and methods
+

@@ -1,0 +1,39 @@
+# Subsection 4.4: Exception Handling
+
+## Key Concepts
+
+- Exceptions
+- Try-except blocks
+- Error handling
+- Raising exceptions
+- Catching exceptions
+
+## Explanations
+
+In Python, exceptions are events that occur during the execution of a program, such as a division by zero or a file not found error. You can use try-except blocks to handle exceptions, and you can raise exceptions using the raise statement. Exceptions are useful for handling errors and unexpected situations in a program, and for providing informative error messages to the user.
+
+## Examples
+
+- Try-except block: try: x = 1 / 0; except ZeroDivisionError: print('Error: division by zero')
+- Raising an exception: raise ValueError('Invalid input')
+- Catching an exception: try: x = 1 / 0; except Exception as e: print(e)
+
+## Summary Points
+
+- Exceptions are events that occur during the execution of a program
+- You can use try-except blocks to handle exceptions
+- You can raise exceptions using the raise statement
+- You can catch exceptions using the except block
+- You can use the finally block to execute code regardless of whether an exception occurred or not
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the try-except block?
+A: The try-except block is used to handle exceptions and provide informative error messages to the user.
+
+Q: What is the difference between raising an exception and catching an exception?
+A: Raising an exception means generating an exception, while catching an exception means handling an exception.
+
+Q: What is the purpose of the finally block?
+A: The finally block is used to execute code regardless of whether an exception occurred or not.
+

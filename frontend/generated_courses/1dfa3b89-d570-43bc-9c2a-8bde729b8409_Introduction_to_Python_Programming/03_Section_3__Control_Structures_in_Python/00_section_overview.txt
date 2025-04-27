@@ -1,0 +1,4 @@
+# Section 3: Section 3: Control Structures in Python
+
+This section covers control structures such as if-else statements, for loops, and while loops, which are crucial for decision-making and repetition in programs.
+

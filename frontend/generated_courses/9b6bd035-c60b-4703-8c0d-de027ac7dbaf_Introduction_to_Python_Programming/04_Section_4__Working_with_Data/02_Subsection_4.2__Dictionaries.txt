@@ -1,0 +1,39 @@
+# Subsection 4.2: Dictionaries
+
+## Key Concepts
+
+- Dictionaries
+- Key-value pairs
+- Creating dictionaries
+- Accessing dictionaries
+- Manipulating dictionaries
+
+## Explanations
+
+In Python, dictionaries are data structures that store key-value pairs. A dictionary is created using curly brackets, and each key-value pair is separated by a comma. You can access a value in a dictionary by its key, and you can manipulate dictionaries by adding, removing, or modifying key-value pairs. Dictionaries are useful for storing and processing data that has a specific structure, such as a person's name and age.
+
+## Examples
+
+- Creating a dictionary: my_dict = {'name': 'John', 'age': 30}
+- Accessing a value: my_dict['name']  # returns 'John'
+- Adding a key-value pair: my_dict['city'] = 'New York'
+
+## Summary Points
+
+- Dictionaries store key-value pairs
+- You can access a value in a dictionary by its key
+- Dictionaries can be manipulated by adding, removing, or modifying key-value pairs
+- Dictionaries are useful for storing and processing structured data
+- You can use various methods to perform operations on dictionaries
+
+## Self-Assessment Questions
+
+Q: What is a dictionary in Python?
+A: A dictionary is a data structure that stores key-value pairs.
+
+Q: How do you access a value in a dictionary?
+A: You can access a value in a dictionary by its key.
+
+Q: What is the get method in a dictionary?
+A: The get method is used to access a value in a dictionary, and it returns None if the key is not found.
+

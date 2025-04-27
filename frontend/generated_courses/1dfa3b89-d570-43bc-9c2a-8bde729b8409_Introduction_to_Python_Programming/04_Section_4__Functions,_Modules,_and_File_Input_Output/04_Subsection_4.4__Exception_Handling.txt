@@ -1,0 +1,37 @@
+# Subsection 4.4: Exception Handling
+
+## Key Concepts
+
+- Exceptions
+- Try-except blocks
+- Error handling
+
+## Explanations
+
+Exceptions are errors that occur during the execution of a program. In Python, you can use try-except blocks to handle exceptions and prevent the program from crashing. The try block contains the code that might raise an exception, and the except block contains the code that will be executed if an exception is raised. You can also use the 'finally' block to execute code regardless of whether an exception was raised or not.
+
+## Examples
+
+- Example: Using a try-except block to handle a division by zero exception - try: x = 5 / 0; except ZeroDivisionError: print('Cannot divide by zero!')
+- Example: Raising a custom exception - raise ValueError('Invalid input!')
+- Example: Using the 'finally' block to execute code regardless of whether an exception was raised - try: x = 5 / 0; except ZeroDivisionError: print('Cannot divide by zero!'); finally: print('Code execution completed.')
+
+## Summary Points
+
+- Exceptions are errors that occur during the execution of a program.
+- Try-except blocks can be used to handle exceptions and prevent the program from crashing.
+- The try block contains the code that might raise an exception, and the except block contains the code that will be executed if an exception is raised.
+- You can raise your own exceptions using the 'raise' statement.
+- You can handle specific exceptions by using the 'except' keyword followed by the exception type.
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the try-except block in Python?
+A: To handle exceptions and prevent the program from crashing.
+
+Q: What is the difference between the try block and the except block?
+A: The try block contains the code that might raise an exception, and the except block contains the code that will be executed if an exception is raised.
+
+Q: How can you raise a custom exception in Python?
+A: Using the 'raise' statement followed by the exception type and a message.
+

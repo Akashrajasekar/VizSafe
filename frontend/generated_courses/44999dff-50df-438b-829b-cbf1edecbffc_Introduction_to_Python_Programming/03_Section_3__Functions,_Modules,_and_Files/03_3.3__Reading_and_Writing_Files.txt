@@ -1,0 +1,37 @@
+# 3.3: Reading and Writing Files
+
+## Key Concepts
+
+- Text files
+- CSV files
+- JSON files
+- File modes
+
+## Explanations
+
+In Python, you can work with files using the 'open' function, which returns a file object. The 'open' function takes two arguments: the file name and the file mode. The file mode specifies how the file should be opened, such as 'r' for reading, 'w' for writing, or 'a' for appending. Once a file is opened, you can read or write to it using the 'read' or 'write' methods.
+
+## Examples
+
+- Example: Open a text file called 'example.txt' in read mode and print its contents.
+- Example: Open a CSV file called 'data.csv' in read mode and print its contents.
+- Example: Open a JSON file called 'config.json' in read mode and print its contents.
+
+## Summary Points
+
+- Files can be opened using the 'open' function
+- The 'open' function takes two arguments: the file name and the file mode
+- Files can be read or written using the 'read' or 'write' methods
+- Different types of files, such as text files, CSV files, and JSON files, can be worked with in Python
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the 'open' function in Python?
+A: The 'open' function is used to open a file and return a file object.
+
+Q: What is the difference between the 'r', 'w', and 'a' file modes?
+A: The 'r' file mode is used for reading, the 'w' file mode is used for writing, and the 'a' file mode is used for appending.
+
+Q: How can you read the contents of a text file?
+A: You can read the contents of a text file using the 'read' method.
+

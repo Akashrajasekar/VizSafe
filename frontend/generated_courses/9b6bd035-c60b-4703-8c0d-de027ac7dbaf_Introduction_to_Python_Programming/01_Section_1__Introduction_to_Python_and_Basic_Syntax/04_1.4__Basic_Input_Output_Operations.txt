@@ -1,0 +1,37 @@
+# 1.4: Basic Input/Output Operations
+
+## Key Concepts
+
+- Print statements
+- Input functions
+- Basic interaction
+
+## Explanations
+
+Python provides several ways to interact with the user, including print statements and input functions. Print statements are used to display output to the user, while input functions are used to get input from the user. Basic interaction with the user is an essential part of many Python programs, and understanding how to use print statements and input functions is crucial. The 'print()' function is used to display output, and the 'input()' function is used to get input from the user.
+
+## Examples
+
+- You can use the 'print()' function to display a message to the user, such as 'print('Hello World')' to display the message 'Hello World'.
+- The 'input()' function can be used to get input from the user, such as 'name = input('What is your name?')' to get the user's name.
+- Basic interaction with the user can be used to create simple programs, such as a program that asks the user for their name and age and then displays a greeting.
+
+## Summary Points
+
+- Print statements are used to display output to the user
+- Input functions are used to get input from the user
+- Basic interaction with the user is an essential part of many Python programs
+- The 'print()' function is used to display output
+- The 'input()' function is used to get input from the user
+
+## Self-Assessment Questions
+
+Q: What is the purpose of print statements in Python?
+A: To display output to the user
+
+Q: What is the purpose of input functions in Python?
+A: To get input from the user
+
+Q: What is basic interaction with the user used for in Python?
+A: To create simple programs that interact with the user
+

@@ -1,0 +1,37 @@
+# 2.1: Conditional Statements
+
+## Key Concepts
+
+- if statements
+- else statements
+- conditional expressions
+
+## Explanations
+
+Conditional statements are used to make decisions in a program based on certain conditions. The if statement is used to execute a block of code if a condition is true. The else statement is used to execute a block of code if the condition is false. Conditional expressions are used to evaluate a condition and return a value. In Python, the if statement is written using the 'if' keyword followed by the condition and a colon. The code to be executed is indented under the if statement. The else statement is written using the 'else' keyword and is used to specify an alternative block of code to execute if the condition is false.
+
+## Examples
+
+- x = 5; if x > 10: print('x is greater than 10'); else: print('x is less than or equal to 10')
+- age = 25; if age >= 18: print('You are eligible to vote'); else: print('You are not eligible to vote')
+- score = 85; if score >= 90: print('Grade A'); elif score >= 80: print('Grade B'); else: print('Grade C')
+
+## Summary Points
+
+- Conditional statements are used to make decisions in a program
+- The if statement is used to execute a block of code if a condition is true
+- The else statement is used to execute a block of code if the condition is false
+- Conditional statements can be nested and used with logical operators
+- Conditional statements allow for more precise control over the flow of a program
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the if statement in Python?
+A: The if statement is used to execute a block of code if a condition is true.
+
+Q: What is the purpose of the else statement in Python?
+A: The else statement is used to execute a block of code if the condition is false.
+
+Q: Can conditional statements be nested in Python?
+A: Yes, conditional statements can be nested in Python.
+

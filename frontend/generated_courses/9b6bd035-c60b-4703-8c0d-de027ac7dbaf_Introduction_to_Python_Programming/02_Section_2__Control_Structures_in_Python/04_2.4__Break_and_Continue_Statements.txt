@@ -1,0 +1,37 @@
+# 2.4: Break and Continue Statements
+
+## Key Concepts
+
+- break statements
+- continue statements
+- loop control
+
+## Explanations
+
+Break and continue statements are used to control the flow of loops in Python. The break statement is used to exit a loop prematurely, while the continue statement is used to skip the rest of the code in the current iteration and move on to the next iteration. In Python, the break statement is written using the 'break' keyword, and the continue statement is written using the 'continue' keyword.
+
+## Examples
+
+- numbers = [1, 2, 3, 4, 5]; for number in numbers: if number == 3: break; print(number)
+- numbers = [1, 2, 3, 4, 5]; for number in numbers: if number == 3: continue; print(number)
+- i = 0; while i < 10: if i == 5: break; print(i); i += 1
+
+## Summary Points
+
+- Break and continue statements are used to control the flow of loops in Python
+- The break statement is used to exit a loop prematurely
+- The continue statement is used to skip the rest of the code in the current iteration and move on to the next iteration
+- Break and continue statements can be used with nested loops
+- Break and continue statements allow for more complex control over the flow of loops
+
+## Self-Assessment Questions
+
+Q: What is the purpose of the break statement in Python?
+A: The break statement is used to exit a loop prematurely.
+
+Q: What is the purpose of the continue statement in Python?
+A: The continue statement is used to skip the rest of the code in the current iteration and move on to the next iteration.
+
+Q: Can break and continue statements be used with nested loops?
+A: Yes, break and continue statements can be used with nested loops.
+

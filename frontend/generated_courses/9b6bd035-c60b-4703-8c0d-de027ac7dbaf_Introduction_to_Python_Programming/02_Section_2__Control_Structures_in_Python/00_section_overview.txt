@@ -1,0 +1,4 @@
+# Section 2: Section 2: Control Structures in Python
+
+This section delves into control structures such as conditional statements and loops, which are crucial for controlling the flow of a program.
+
